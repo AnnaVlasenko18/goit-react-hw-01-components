@@ -10,7 +10,7 @@ const theme = {
 
   radii: {
     sm: '4px',
-    md: '80px',
+    md: '50%',
   },
 
   spacing: value => `${value * 4}px`,
