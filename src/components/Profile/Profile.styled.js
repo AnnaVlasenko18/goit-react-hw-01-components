@@ -20,6 +20,7 @@ export const CardUser = styled.div`
 
 export const UsereUrl = styled.img`
   border-radius: ${p => p.theme.radii.md};
+  border: 2px solid ${p => p.theme.colors.brdPrifile};
 `;
 
 export const Text = styled.p`
