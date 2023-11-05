@@ -33,3 +33,11 @@ export const FriendListSpan = styled.span`
   height: 10px;
   display: inline-block;
 `;
+
+export function getBgColor(variant) {
+  if (variant === true) {
+    return 'green';
+  }
+
+  return 'burgundy';
+}
