@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const CardWrapeer = styled.div`
-  border: 1px solid ${p => p.theme.colors.brdPrifile};
+export const CardWrapper = styled.div`
+  border: 2px solid ${p => p.theme.colors.brdPrifile};
   border-radius: ${props => props.theme.radii.sm};
   padding: ${p => p.theme.spacing(2)};
   display: flex;
@@ -12,7 +12,10 @@ export const CardWrapeer = styled.div`
 `;
 
 export const CardUser = styled.div`
-  width: 140px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 128px;
 `;
 
 export const UsereUrl = styled.img`
@@ -31,11 +34,13 @@ export const CardList = styled.ul`
   gap: 12px;
   padding: 0;
   margin: 0;
-  background: #ead8d7;
 `;
 
 export const CardItem = styled.li`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-radius: ${props => props.theme.radii.sm};
+  border: 2px solid ${p => p.theme.colors.brdPrifile};
+  background: #ead8d7;
 `;
