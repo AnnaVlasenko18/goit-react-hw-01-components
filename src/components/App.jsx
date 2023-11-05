@@ -25,8 +25,6 @@ export const App = () => {
       <Wrapper>
         <Profile user={user} />
         <Statistics title="Upload stats" stats={data} />
-      </Wrapper>
-      <Wrapper>
         <FriendList friends={friends} />
         <Transactions items={transactions} />
       </Wrapper>

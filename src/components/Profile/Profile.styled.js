@@ -9,6 +9,7 @@ export const CardWrapper = styled.div`
   justify-content: center;
   width: 240px;
   background: #eae3e1;
+  margin: 0 auto;
 `;
 
 export const CardUser = styled.div`

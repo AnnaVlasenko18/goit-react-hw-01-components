@@ -13,6 +13,7 @@ export const FriendListList = styled.ul`
   max-width: 800px;
   height: 70px;
   gap: 12px;
+  margin: 0 auto;
 `;
 
 export const FriendListItem = styled.li`

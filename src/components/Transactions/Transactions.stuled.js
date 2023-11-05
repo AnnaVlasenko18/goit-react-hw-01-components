@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const TransTable = styled.table`
   width: 100%;
+  max-width: 820px;
   border-radius: ${props => props.theme.radii.sm};
   background: ${p => p.theme.colors.brdPrifile};
+  margin: 0 auto;
 `;
 
 export const TransList = styled.tr`
