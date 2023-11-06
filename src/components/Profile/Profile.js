@@ -8,7 +8,11 @@ import {
 } from './Profile.styled';
 
 export const Profile = ({
-  user: { avatar, username, tag, location, stats },
+  avatar,
+  username,
+  tag,
+  location,
+  stats: { views, followers, likes },
 }) => {
   return (
     <CardWrapper>
@@ -24,15 +28,15 @@ export const Profile = ({
       <CardList>
         <CardItem>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span>{views}</span>
         </CardItem>
         <CardItem>
           <span>Followers</span>
-          <span>{stats.followers}</span>
+          <span>{followers}</span>
         </CardItem>
         <CardItem>
           <span>likes</span>
-          <span>{stats.likes}</span>
+          <span>{likes}</span>
         </CardItem>
       </CardList>
     </CardWrapper>

@@ -11,14 +11,12 @@ export const Statistics = ({ title, stats }) => {
     <StatsCard className={title ? 'superSection' : 'baseSection'}>
       {title && <h2>{title}</h2>}
       <StatsList>
-        {stats.map(stat => {
-          return (
-            <StatsItem key={stat.id}>
-              <StatsSpan>{stat.label}</StatsSpan>
-              <StatsSpan>{stat.percentage}%</StatsSpan>
-            </StatsItem>
-          );
-        })}
+        {stats.map(({ id, label, percentage }) => (
+          <StatsItem key={id}>
+            <StatsSpan>{label}</StatsSpan>
+            <StatsSpan>{percentage}%</StatsSpan>
+          </StatsItem>
+        ))}
       </StatsList>
     </StatsCard>
   );

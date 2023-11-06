@@ -13,12 +13,12 @@ export const Transactions = ({ items }) => {
           </TransList>
         </thead>
         <tbody>
-          {items.map((item, i) => {
+          {items.map(({ id, type, amount, currency }, i) => {
             return (
-              <tr style={{ backgroundColor: getBgLine(i) }} key={item.id}>
-                <TransItemTabl>{item.type}</TransItemTabl>
-                <TransItemTabl>{item.amount}</TransItemTabl>
-                <TransItemTabl>{item.currency}</TransItemTabl>
+              <tr style={{ backgroundColor: getBgLine(i) }} key={id}>
+                <TransItemTabl>{type}</TransItemTabl>
+                <TransItemTabl>{amount}</TransItemTabl>
+                <TransItemTabl>{currency}</TransItemTabl>
               </tr>
             );
           })}
